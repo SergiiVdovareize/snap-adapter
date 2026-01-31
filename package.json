@@ -1,9 +1,19 @@
 {
   "name": "@servdo/snapsave-adapter",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
     "snapsave-media-downloader": "^2.3.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "call": "npm run build && node dist/cli.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.0.0"
   }
 }
