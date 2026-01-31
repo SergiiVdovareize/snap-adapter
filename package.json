@@ -1,11 +1,10 @@
 {
   "name": "snapsave-adapter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "description": "Adapter for snapsave-media-downloader (CLI + TypeScript wrapper)",
-  "files": ["dist"],
+  "main": "src/index.js",
+  "description": "Adapter for snapsave-media-downloader",
+  "files": ["src"],
   "publishConfig": { "access": "public" },
   "license": "MIT",
   "keywords": ["snapsave", "instagram", "downloader"],
@@ -13,12 +12,7 @@
     "snapsave-media-downloader": "^2.3.4"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node dist/index.js",
-    "call": "npm run build && node dist/cli.js"
-  },
-  "devDependencies": {
-    "typescript": "^5.3.3",
-    "@types/node": "^20.0.0"
+    "start": "node src/index.js",
+    "call": "node src/cli.js"
   }
 }

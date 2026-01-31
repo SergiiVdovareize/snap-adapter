@@ -1,4 +1,6 @@
-export async function snapsave(url: string): Promise<any> {
+export async function snapsave(url) {
   const { snapsave: save } = await import('snapsave-media-downloader');
   return save(url);
 }
+
+export default snapsave;
