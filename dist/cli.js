@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { snapsave } from './index.js';
 const url = process.argv[2];
 if (!url) {

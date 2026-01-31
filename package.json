@@ -1,9 +1,14 @@
 {
-  "name": "@servdo/snapsave-adapter",
+  "name": "snapsave-adapter",
   "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "description": "Adapter for snapsave-media-downloader (CLI + TypeScript wrapper)",
+  "files": ["dist"],
+  "publishConfig": { "access": "public" },
+  "license": "MIT",
+  "keywords": ["snapsave", "instagram", "downloader"],
   "dependencies": {
     "snapsave-media-downloader": "^2.3.4"
   },
