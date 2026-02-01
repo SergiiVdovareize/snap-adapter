@@ -1,15 +1,8 @@
 {
   "name": "snapsave-adapter",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
-  "main": "src/index.cjs",
-  "module": "src/index.js",
-  "exports": {
-    ".": {
-      "import": "./src/index.js",
-      "require": "./src/index.cjs"
-    }
-  },
+  "main": "src/index.js",
   "description": "Adapter for snapsave-media-downloader",
   "files": ["src"],
   "publishConfig": { "access": "public" },
