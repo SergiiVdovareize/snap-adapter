@@ -1,5 +1,7 @@
-export async function snapsave(url) {
-  const { snapsave: save } = await import('snapsave-media-downloader');
+import * as snapsavePkg from 'snapsave-media-downloader';
+const save = snapsavePkg.snapsave ?? snapsavePkg.default?.snapsave ?? snapsavePkg.default ?? snapsavePkg;
+
+export function snapsave(url) {
   return save(url);
 }
 
