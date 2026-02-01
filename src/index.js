@@ -1,5 +1,4 @@
-import * as snapsavePkg from 'snapsave-media-downloader';
-const save = snapsavePkg.snapsave ?? snapsavePkg.default?.snapsave ?? snapsavePkg.default ?? snapsavePkg;
+import { snapsave as save } from 'snapsave-media-downloader';
 
 export function snapsave(url) {
   return save(url);
