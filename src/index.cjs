@@ -1,7 +1,14 @@
-const snapsavePkg = require('snapsave-media-downloader');
-const save = snapsavePkg && (snapsavePkg.snapsave || (snapsavePkg.default && snapsavePkg.default.snapsave) || snapsavePkg.default || snapsavePkg);
+let _save;
+async function _getSave() {
+  if (!_save) {
+    const pkg = await import('snapsave-media-downloader');
+    _save = pkg.snapsave ?? pkg.default?.snapsave ?? pkg.default ?? pkg;
+  }
+  return _save;
+}
 
-function snapsave(url) {
+async function snapsave(url) {
+  const save = await _getSave();
   return save(url);
 }
 
