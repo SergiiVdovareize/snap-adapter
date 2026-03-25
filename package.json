@@ -1,6 +1,6 @@
 {
   "name": "snapsave-adapter",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "type": "module",
   "main": "src/index.cjs",
   "module": "src/index.js",
@@ -11,12 +11,23 @@
     }
   },
   "description": "Adapter for snapsave-media-downloader",
-  "files": ["src"],
-  "publishConfig": { "access": "public" },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
-  "keywords": ["snapsave", "instagram", "downloader"],
+  "keywords": [
+    "snapsave",
+    "instagram",
+    "facebook",
+    "tiktok",
+    "twitter",
+    "downloader"
+  ],
   "dependencies": {
-    "snapsave-media-downloader": "^2.3.4"
+    "snapsave-media-downloader": "^2.4.0"
   },
   "scripts": {
     "start": "node src/index.js",
