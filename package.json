@@ -1,6 +1,6 @@
 {
   "name": "snapsave-adapter",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "type": "module",
   "main": "src/index.cjs",
   "module": "src/index.js",

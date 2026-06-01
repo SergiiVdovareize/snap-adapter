@@ -1,6 +1,6 @@
 # snapsave-adapter
 
-A robust ESM and CommonJS adapter wrapper around `snapsave-media-downloader` that standardizes media downloader results into a normalized format.
+A robust ESM and CommonJS adapter wrapper around [snapsave-media-downloader](https://github.com/ahmedrangel/snapsave-media-downloader) (created by [ahmedrangel](https://github.com/ahmedrangel)) that standardizes media downloader results into a normalized format.
 
 ## Features
 
